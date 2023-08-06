@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>여기에 제목 입력</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/survey.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+
+  <body>
+    <hr />
+    <form action="/result" method="post">
+      {% for data in data_list %}
+      <p class="song_name">{{ data['Song Title']+" - "+data['Artist']}}</p>
+      <p align="middle">
+        <iframe src="https://open.spotify.com/embed/track/{{ data['Spotify URI'] }}" width="95%" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </p>
+
+      <div class="rating">
+        <p class="rating-stars">
+          평점 :
+          <input type="radio" name="rating_{{ loop.index0 }}" value="1" id="star1_{{ loop.index0 }}" checked />
+          <label for="star1_{{ loop.index0 }}"><i class="fas fa-star"></i></label>
+
+          <input type="radio" name="rating_{{ loop.index0 }}" value="2" id="star2_{{ loop.index0 }}" />
+          <label for="star2_{{ loop.index0 }}"><i class="fas fa-star"></i></label>
+
+          <input type="radio" name="rating_{{ loop.index0 }}" value="3" id="star3_{{ loop.index0 }}" />
+          <label for="star3_{{ loop.index0 }}"><i class="fas fa-star"></i></label>
+
+          <input type="radio" name="rating_{{ loop.index0 }}" value="4" id="star4_{{ loop.index0 }}" />
+          <label for="star4_{{ loop.index0 }}"><i class="fas fa-star"></i></label>
+
+          <input type="radio" name="rating_{{ loop.index0 }}" value="5" id="star5_{{ loop.index0 }}" />
+          <label for="star5_{{ loop.index0 }}"><i class="fas fa-star"></i></label>
+        </p>
+      </div>
+
+      <hr />
+      {% endfor %}
+      <div class="button"><input type="submit" class="submit_btn" value="예측시작" /></div>
+    </form>
+  </body>
+</html>

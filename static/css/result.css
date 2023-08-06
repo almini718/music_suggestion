@@ -1,0 +1,129 @@
+/*------------------------------------------------------------------------
+# Free Splash HTML Templates - Feb 3, 2018
+# ------------------------------------------------------------------------
+# Designed & coded by Awe7 Team
+# Websites:  http://www.awe7.com -  Email: info@awe7.com
+--------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #787878;
+  background-color: #212121;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.song_name {
+  text-align: center;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 2;
+}
+
+hr {
+  background-color: #57d03b;
+  height: 3px;
+  border: 0;
+}
+
+.button {
+  text-align: center;
+}
+
+.submit_btn {
+  color: #212121;
+  background-color: #57d03b;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  padding: 1rem 3.125rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.ratings {
+  text-align: center;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn1 {
+  color: #212121;
+  background-color: #57d03b;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  padding: 1rem 3.125rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #333;
+  color: #fff;
+}

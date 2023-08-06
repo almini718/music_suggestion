@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>음악 추천 결과</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}" />
+  </head>
+
+  <body>
+    <hr />
+    {% for song in top_songs %}
+    <p class="song_name">{{ song['Song Title'] + " - " + song['Artist']}}</p>
+    <p class="ratings">예상 평점 : {{ "%.2f"|format(song['ratings']) }}</p>
+    <p align="middle">
+      <iframe src="https://open.spotify.com/embed/track/{{ song['Spotify URI'] }}" width="95%" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </p>
+    <hr />
+    {% endfor %}
+    <div class="buttons">
+      <button type="button" class="btn1" onclick="location.href='/'">처음으로</button>
+      <button type="button" class="btn1" onclick="location.href='/survey'">다시하기</button>
+    </div>
+  </body>
+</html>

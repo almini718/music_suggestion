@@ -1,0 +1,122 @@
+/*------------------------------------------------------------------------
+# Free Splash HTML Templates - Feb 3, 2018
+# ------------------------------------------------------------------------
+# Designed & coded by Awe7 Team
+# Websites:  http://www.awe7.com -  Email: info@awe7.com
+--------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #787878;
+  background-color: #212121;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.song_name {
+  text-align: center;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2;
+}
+
+hr {
+  background-color: #57d03b;
+  height: 3px;
+  border: 0;
+}
+
+.button {
+  text-align: center;
+}
+
+.submit_btn {
+  color: #212121;
+  background-color: #57d03b;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  padding: 1rem 3.125rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.submit_btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.rating-stars {
+  font-size: 24px; /* 별 아이콘 크기를 조절할 수 있습니다. */
+}
+
+.rating-stars input[type="radio"] {
+  display: none; /* 기본 라디오 버튼 숨기기 */
+}
+
+.rating-stars label {
+  color: #57d03b; /* 라벨의 기본 색상 (비선택 상태) */
+  cursor: pointer;
+}
+
+.rating-stars label i {
+  transition: color 0.25s; /* 색상 변화에 애니메이션 효과 추가 */
+}
+
+.rating-stars input[type="radio"]:checked ~ label i {
+  color: #57d03b; /* 선택된 별 색상  */
+}
+
+/* 선택된 별 이하의 별들을 노란색으로 표시하는 CSS */
+.rating-stars input[type="radio"]:checked ~ label ~ input[type="radio"] + label i {
+  color: #fff;
+}
+
+.rating {
+  text-align: center;
+}
