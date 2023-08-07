@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>음악 추천 결과</title>
+    <title>MAY</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -12,6 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
 
   <body>
@@ -24,9 +25,21 @@
     </p>
     <hr />
     {% endfor %}
+    <br />
     <div class="buttons">
       <button type="button" class="btn1" onclick="location.href='/'">처음으로</button>
       <button type="button" class="btn1" onclick="location.href='/survey'">다시하기</button>
+    </div>
+    <br />
+    <hr class="hr_grey" />
+    <div class="about">
+      <br />
+      <p>
+        MAY. <br />
+        © 2023 - 2023.<br />
+        nanowater. All rights reserved.
+      </p>
+      <a href="https://github.com/almini718/music_suggestion" target="_blank" class="github-btn"> <i class="fab fa-github"></i> GitHub </a>
     </div>
   </body>
 </html>
