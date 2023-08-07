@@ -8,7 +8,7 @@ app = Flask(__name__)
 random_samples = None
 
 # 데이터 불러오기
-df = pd.read_csv("/Music_Suggestion/Data.csv", engine="python", encoding="utf-8")
+df = pd.read_csv("Music_Suggestion/Data.csv", engine="python", encoding="utf-8")
 
 
 # goto index.html
